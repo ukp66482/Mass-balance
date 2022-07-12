@@ -11,11 +11,11 @@
 
 ## 程式使用說明
 此計算機需要提供您問題當中的相關參數例如:
-  #### 1.Stream direction *in or out*
-  #### 2.Chemical component
-  #### 3.Fraction prefix
-  #### 4.Process relations
-  #### 5.Known parameters
+####   1.Stream direction *in or out*
+####   2.Chemical component
+####   3.Fraction prefix
+####   4.Process relations
+####   5.Known parameters
 
 ### 如何將相關參數放入程式
 ```python
