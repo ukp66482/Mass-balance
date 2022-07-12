@@ -172,3 +172,37 @@ print (*unknown_variables,sep=" ,")
 ```
 ![各類情況](https://user-images.githubusercontent.com/109071424/178460295-403b5ea0-1b27-4365-9cc6-63a95557580e.png)
 上圖為各類可能出現的情況
+
+### 求得解的判定
+```python
+solutions = sympy.solve(sym_equations,unknown_variables)
+
+solutions = eval(str(solutions))
+
+
+Final_V = V_initial.copy()
+
+if len(solutions)!=0:
+
+    print("\nThe solutions are:")
+
+    for i in range(len(unknown_variables)):
+        print(unknown_variables[i],"=",sympy.Float(solutions[0][i],5))
+    
+    for i in range(len(unknown_variables)):
+        Final_V[unknown_index[i][0],unknown_index[i][1]] =sympy.Float(solutions[0][i],5)
+
+    for i in range(len(solutions[0])):
+        if int(solutions[0][i])<0:
+            print(colored("\nWarning !! The solution contains negative numbers","red"))
+            break
+
+elif len(solutions)==0 and len(given_variables)-N_zeros+Np == Nd:
+    
+    print(colored("\nWarning there should be existing dependent equations","red",attrs=["bold"]))
+
+print ("\n")    
+```
+就算問題是可以的情況，我們也會遇到許多問題。
+1.求得的solution為解析解
+  當發生這個情況我們必須講已知帶入solution當中，就可以得到正常的答案。
