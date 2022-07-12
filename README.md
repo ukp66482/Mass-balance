@@ -31,3 +31,9 @@ component_labels = ["Flow rate", "Oxygen", "Nitrogen", "Argon"]
 ```python
 fraction_prefix = "y" # mass (x) or mole (y) fraction
 ```
+4.再來是process relations 此題沒有相關假設，所以直接空白即可
+```python
+###### process relation
+
+process_equation = [] ## eg:"F1=0.25*F2"
+```
