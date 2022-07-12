@@ -204,5 +204,7 @@ elif len(solutions)==0 and len(given_variables)-N_zeros+Np == Nd:
 print ("\n")    
 ```
 就算問題是可以的情況，我們也會遇到許多問題。
+
 1.求得的solution為解析解
+  
   當發生這個情況我們必須講已知帶入solution當中，就可以得到正常的答案。
