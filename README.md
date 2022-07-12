@@ -59,3 +59,18 @@ y3A = 0
 
 ## 程式內容簡介
 
+### Flow table的生成
+在這個程式當中，我們透過引用python中的pandas來創建在質能均衡課中我們常用的flow table
+```python
+stream_labels = []
+for i in range(Ns):
+    stream_labels.append("stream " + str(i+1) + "-" + stream_direction[i])
+
+
+V_empty = np.empty([Ns, Nc+1],dtype=object)  
+
+
+df = pandas.DataFrame(V_empty, index=stream_labels, columns=component_labels)
+print (df)
+```
+
