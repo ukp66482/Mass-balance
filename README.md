@@ -12,6 +12,6 @@
 ## 程式使用說明
 此計算機需要提供您問題當中的相關參數例如:
 ### 1.Stream direction *in or out*
-### 2.chemical component
-### 3.fraction prefix
-### 4.process relations
+### 2.Chemical component
+### 3.Fraction prefix
+### 4.Process relations
