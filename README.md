@@ -218,3 +218,13 @@ print ("\n")
 
 &ensp;當提供的已知數洽巧讓方程式產生dependent equations將會讓solution為一個空集合，程式也會提示出可能存在dependent equations
 ![de](https://user-images.githubusercontent.com/109071424/178463676-3209480c-9295-4906-8221-ed6e549aaade.png)
+
+## 此程式未來展望
+
+1.GUI介面
+
+此程式目前沒有GUI，因本人也是第一次接觸python，希望在將來能夠加入GUI介面讓用更加方便。
+
+2.將化學反應和能量守恆放入其中
+
+質能均衡在加入化學反應後，將會讓變數分析需要全部重寫難度甚高，希望將來夠將其加入。
