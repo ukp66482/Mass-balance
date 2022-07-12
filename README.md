@@ -15,3 +15,17 @@
 #### 2.Chemical component
 #### 3.Fraction prefix
 #### 4.Process relations
+#### 5.Known parameters
+
+###如何將相關參數放入程式
+```python
+###### inputs
+
+stream_direction = ["in","in","out","out"] # directions of streams
+component_labels = ["Flow rate","Methene","Ethene","Propyne","Nitrogen","Oxygen","CO2"] #chemical components
+fraction_prefix = "y" # mass (x) or mole (y) fraction
+
+###### process relation
+
+process_equation = ["F1=0.25*F2","F3=0.5*F4","y2N=0.1*y3P"] ## eg:"F1=0.25*F2"
+```
