@@ -19,6 +19,7 @@
 ### 如何將相關參數放入程式
 我們直接透過一個簡單的例題來做輸入的教學![example](https://user-images.githubusercontent.com/109071424/178442376-9d614242-86b5-4436-9b96-0f9793d24aca.png)
 
-
-
-打開程式碼馬上可以看到一區叫做 inputs 和 process relations的部分，我們需要將所有知道的參數在此區域進行輸入:
+從題目當中我們可以知道有 Stream 1 , Stream 2 , Stream 3 三個stream，方向分別為 in , out , out 所以我們打開程式碼在inputs的stream directions 部分放入
+```python
+stream_direction = ["in","in","out"] # directions of streams
+```
