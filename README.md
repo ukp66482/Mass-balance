@@ -38,6 +38,7 @@ fraction_prefix = "y" # mass (x) or mole (y) fraction
 process_equation = [] ## eg:"F1=0.25*F2"
 ```
 5.最後我們將題目給的所有已知放入，因前面我們已經將fraction prefix設為y，所以在提供已知項時就要符合您的假設，以上圖右側y1O來舉例
+
 ![291963577_333417485666349_5528480416349607031_n](https://user-images.githubusercontent.com/109071424/178447152-8c627296-7d4d-4ab3-97e3-162e80fdbf7d.jpg)
 
 我們必須照著上圖的方式將您題目中的已知項命名，加入在input fraction , flow rate的區域
@@ -133,6 +134,10 @@ print("\n")
 df = pandas.DataFrame(V_initial, index=stream_labels, columns=component_labels)
 print (df)   
 ```
+![5556888](https://user-images.githubusercontent.com/109071424/178466418-f89d1a44-70c8-4010-a1ff-fe28320115c9.png)
+
+結果如上圖所示
+
 ### 變數分析及告知
     此程式最重要的地方就是這部分，這邊我們沒有使用在課程中所學的自由度(degree of freedom)來做分析，而是透過designed variables的方式。
 此區域透過程式讓我們可以知道所有variables的數量且可找出我們有幾個designed variables，並判斷是否提供太多未知數或提供太少未知數。
