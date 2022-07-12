@@ -208,3 +208,13 @@ print ("\n")
 1.求得的solution為解析解
 
 &ensp;當發生這個情況我們必須講已知帶入solution當中，就可以得到正常的答案。
+
+2.如果solution有負數
+
+&ensp;在質能均衡的問題當中通常是不會出現負數的，因為解就是濃度和流量，所以不該有負數解。
+![nega](https://user-images.githubusercontent.com/109071424/178462194-b0701b54-b51c-42dd-9252-14a0a7e011ae.png)
+
+3.出現dependent equations
+
+&ensp;當提供的已知數洽巧讓方程式產生dependent equations將會讓solution為一個空集合，程式也會提示出可能存在dependent equations
+![de](https://user-images.githubusercontent.com/109071424/178463676-3209480c-9295-4906-8221-ed6e549aaade.png)
