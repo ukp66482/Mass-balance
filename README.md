@@ -133,5 +133,20 @@ print("\n")
 df = pandas.DataFrame(V_initial, index=stream_labels, columns=component_labels)
 print (df)   
 ```
+### 變數分析及告知
+此程式最重要的地方就是這部分，這邊我們沒有使用在課程中所學的自由度(degree of freedom)來做分析，而是透過designed variables的方式。
+```python
+Ns = len(stream_direction)
+Nc = len(component_labels) - 1 
+Np = len(process_equation)
+----------------------------------------------------------------------------------------------
+N_zeros = np.count_nonzero(V_initial == 0) 
+Nv = Ns*(Nc+1) - N_zeros + Np            
+Nd = Nv - Ns - Nc -Np                   
 
+
+print ("\nThe number of total variables (zeros not included):", Nv) 
+print (colored("The number of design variables:",attrs=["bold"]), Nd)
+print ("\nYou have given", len(given_variables)-N_zeros+Np, "variables")
+```
 
