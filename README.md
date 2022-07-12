@@ -1,4 +1,4 @@
-# Mass-balance solver
+# Mass-balance solver (python)
 
 ## **程式目的**
 
