@@ -1,4 +1,4 @@
-# Mass-balance solver ()
+# Mass-balance solver (jupyter notebook)
 
 ## **程式目的**
 
