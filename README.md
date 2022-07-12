@@ -51,7 +51,7 @@ y2N = 0.01
 y3A = 0
 ######
 ```
-###執行程式
+### 執行程式
 當你照著上述方式將所有參數輸入並執行程式你就可以得到自動產生的flow table
 ![final](https://user-images.githubusercontent.com/109071424/178450695-1514a731-5f88-4d27-8a31-de8e3a44cc87.png)
 
