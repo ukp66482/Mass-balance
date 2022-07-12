@@ -39,4 +39,15 @@ process_equation = [] ## eg:"F1=0.25*F2"
 ```
 5.最後我們將題目給的所有已知放入，因前面我們已經將fraction prefix設為y，所以在提供已知項時就要符合您的假設，以上圖右側y1O來舉例
 ![291963577_333417485666349_5528480416349607031_n](https://user-images.githubusercontent.com/109071424/178447152-8c627296-7d4d-4ab3-97e3-162e80fdbf7d.jpg)
+我們必須照著上圖的方式將您題目中的已知項命名，加入在input fraction , flow rate的區域
+```python
+###### input fraction , flow rate
+y1N = 0.7808
+F2 = 100
+y2O = 0.9
+y1O = 0.2098
+y2N = 0.01
+y3A = 0
+######
+```
 
