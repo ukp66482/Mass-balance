@@ -170,3 +170,5 @@ number_unknowns = len(unknown_variables)
 print ("\nThere are", number_unknowns, "unknown variables:")
 print (*unknown_variables,sep=" ,")
 ```
+![各類情況](https://user-images.githubusercontent.com/109071424/178460295-403b5ea0-1b27-4365-9cc6-63a95557580e.png)
+上圖為各類可能出現的情況
