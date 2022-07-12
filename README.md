@@ -135,6 +135,8 @@ print (df)
 ```
 ### 變數分析及告知
 此程式最重要的地方就是這部分，這邊我們沒有使用在課程中所學的自由度(degree of freedom)來做分析，而是透過designed variables的方式。
+此區域透過程式讓我們可以知道所有variables的數量且可找出我們有幾個designed variables，並判斷是否提供太多未知數或提供太少未知數。
+在質能均衡課程當中我們知道如果題目給了足夠的未知數但沒有跟flow rate相關我們也沒辦法求出正確的答案，此程式也能判斷出這個情況。
 ```python
 Ns = len(stream_direction)
 Nc = len(component_labels) - 1 
@@ -148,5 +150,23 @@ Nd = Nv - Ns - Nc -Np
 print ("\nThe number of total variables (zeros not included):", Nv) 
 print (colored("The number of design variables:",attrs=["bold"]), Nd)
 print ("\nYou have given", len(given_variables)-N_zeros+Np, "variables")
+
+if len(given_variables)-N_zeros+Np > Nd:
+    print (colored("You have given too many input variables","red"))
+if len(given_variables)-N_zeros+Np < Nd:
+    print (colored("You didn't give enough input variables","red"))
+    
+    
+u=0
+for i in range(len(stream_direction)):
+    if all_variables[i] not in globals():
+        u+=1
+    if u==len(stream_direction):
+        print(colored("\nYou didn't provide any Flow information so can't solve the problem","red"))
+        
+unknown_variables = [element for element in all_variables if element not in given_variables]
+number_unknowns = len(unknown_variables)
+print ("\nThere are", number_unknowns, "unknown variables:")
+print (*unknown_variables,sep=" ,")
 ```
 
