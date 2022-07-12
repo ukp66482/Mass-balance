@@ -73,5 +73,6 @@ V_empty = np.empty([Ns, Nc+1],dtype=object)
 df = pandas.DataFrame(V_empty, index=stream_labels, columns=component_labels)
 print (df)
 ```
+下圖為新生成的Flow table
 ![1](https://user-images.githubusercontent.com/109071424/178454275-157b072e-3519-4887-8c11-43f864fde402.png)
 
