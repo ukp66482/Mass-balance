@@ -38,3 +38,6 @@ fraction_prefix = "y" # mass (x) or mole (y) fraction
 process_equation = [] ## eg:"F1=0.25*F2"
 ```
 5.最後我們將題目給的所有已知放入，因前面我們已經將fraction prefix設為y，所以在提供已知項時就要符合您的假設，以上圖右側y1O來舉例
+![291963577_333417485666349_5528480416349607031_n](https://user-images.githubusercontent.com/109071424/178446898-5d12dee3-8479-456f-8815-2b8bdad9c016.jpg)
+
+
