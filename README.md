@@ -78,6 +78,7 @@ print (df)
 ![1](https://user-images.githubusercontent.com/109071424/178454275-157b072e-3519-4887-8c11-43f864fde402.png)
 
 ### 將已知放入Flow table當中
+在這邊我們主要的動作是將未知數用python sympy中的symbol來生成並判斷是否已經宣告他數值，如果已經宣告那就將數值放入flow table，反之則用symbol來做取代。
 ```python
 all_variables = []
 
