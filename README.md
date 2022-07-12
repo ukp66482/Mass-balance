@@ -134,7 +134,7 @@ df = pandas.DataFrame(V_initial, index=stream_labels, columns=component_labels)
 print (df)   
 ```
 ### 變數分析及告知
-此程式最重要的地方就是這部分，這邊我們沒有使用在課程中所學的自由度(degree of freedom)來做分析，而是透過designed variables的方式。
+    此程式最重要的地方就是這部分，這邊我們沒有使用在課程中所學的自由度(degree of freedom)來做分析，而是透過designed variables的方式。
 此區域透過程式讓我們可以知道所有variables的數量且可找出我們有幾個designed variables，並判斷是否提供太多未知數或提供太少未知數。
 在質能均衡課程當中我們知道如果題目給了足夠的未知數但沒有跟flow rate相關我們也沒辦法求出正確的答案，此程式也能判斷出這個情況。
 ```python
