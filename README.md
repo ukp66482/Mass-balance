@@ -59,7 +59,7 @@ y3A = 0
 
 ## 程式內容簡介
 
-### Flow table的生成
+### 初始化Flow table的生成
 在這個程式當中，我們透過引用python中的pandas來創建在質能均衡課中我們常用的flow table
 ```python
 stream_labels = []
@@ -76,4 +76,61 @@ print (df)
 下圖為新生成的Flow table
 
 ![1](https://user-images.githubusercontent.com/109071424/178454275-157b072e-3519-4887-8c11-43f864fde402.png)
+
+### 將已知放入Flow table當中
+```python
+all_variables = []
+
+
+for i in range(len(stream_direction)):
+    all_variables.append(component_labels[0][0] + str(i+1))
+
+
+for i in range(len(component_labels[1:])): 
+    for j in range(len(stream_direction)):
+        all_variables.append(fraction_prefix + str(j+1) 
+                             + component_labels[i+1][0])
+        
+
+
+all_symbols = sympy.symbols(all_variables)
+
+
+
+
+V_initial = V_empty.copy()
+
+given_variables = []
+
+unknown_index=[]
+for i in range(len(all_variables)):
+    
+ 
+    index_row = int(all_variables[i][1]) - 1
+    
+    if all_variables[i][0] == component_labels[0][0]:
+        index_column = 0
+    
+    else:
+        for j in range(len(component_labels)):
+            
+            if all_variables[i][2] == component_labels[j][0]:
+                index_column = j
+    
+    if all_variables[i] in globals():
+
+        V_initial[index_row, index_column] = eval(all_variables[i])
+        given_variables.append(all_variables[i])
+    else:
+        V_initial[index_row, index_column] = all_symbols[i]
+        unknown_index.append([index_row,index_column])
+
+
+print("\n")
+
+ 
+df = pandas.DataFrame(V_initial, index=stream_labels, columns=component_labels)
+print (df)   
+```
+
 
