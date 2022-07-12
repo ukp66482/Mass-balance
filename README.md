@@ -27,3 +27,7 @@ stream_direction = ["in","in","out"] # directions of streams
 ```python
 component_labels = ["Flow rate", "Oxygen", "Nitrogen", "Argon"]
 ```
+3.fraction prefix 我們通常將莫耳濃度設為y 重量百分濃度設為x，這只是我本人的習慣，大家可以隨意設定不影響程式運行。
+```python
+fraction_prefix = "y" # mass (x) or mole (y) fraction
+```
