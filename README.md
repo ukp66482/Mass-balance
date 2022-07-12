@@ -17,9 +17,13 @@
 ####  5.Known parameters
 
 ### 如何將相關參數放入程式
-我們直接透過一個簡單的例題來做輸入的教學![example](https://user-images.githubusercontent.com/109071424/178442376-9d614242-86b5-4436-9b96-0f9793d24aca.png)
+我們直接透過一個簡單的例題來做輸入的教學:![example](https://user-images.githubusercontent.com/109071424/178442376-9d614242-86b5-4436-9b96-0f9793d24aca.png)
 
-從題目當中我們可以知道有 Stream 1 , Stream 2 , Stream 3 三個stream，方向分別為 in , out , out 所以我們打開程式碼在inputs的stream directions 部分放入
+1.從題目當中我們可以知道有 Stream 1 , Stream 2 , Stream 3 三個stream，方向分別為 in , out , out 所以我們打開程式碼在inputs的stream directions 部分放入
 ```python
 stream_direction = ["in","in","out"] # directions of streams
+```
+2.再來我們需要讓程式知道我們有什麼化學物質，透過題目我們知道有 Oxygen , Argon , Nitrogen，所以我們將程式中component_labels的部分在flow rate後方將其加入
+```python
+component_labels = ["Flow rate", "Oxygen", "Nitrogen", "Argon"]
 ```
