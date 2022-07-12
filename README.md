@@ -174,6 +174,9 @@ print (*unknown_variables,sep=" ,")
 上圖為各類可能出現的情況
 
 ### 求得解的判定
+
+就算問題是可以的情況，我們也會遇到許多問題。
+
 ```python
 solutions = sympy.solve(sym_equations,unknown_variables)
 
@@ -203,7 +206,6 @@ elif len(solutions)==0 and len(given_variables)-N_zeros+Np == Nd:
 
 print ("\n")    
 ```
-就算問題是可以的情況，我們也會遇到許多問題。
 
 1.求得的solution為解析解
 
