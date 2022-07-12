@@ -170,4 +170,3 @@ number_unknowns = len(unknown_variables)
 print ("\nThere are", number_unknowns, "unknown variables:")
 print (*unknown_variables,sep=" ,")
 ```
-
