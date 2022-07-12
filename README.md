@@ -219,6 +219,7 @@ print ("\n")
 3.出現dependent equations
 
 &ensp;當提供的已知數洽巧讓方程式產生dependent equations將會讓solution為一個空集合，程式也會提示出可能存在dependent equations
+
 ![de](https://user-images.githubusercontent.com/109071424/178463676-3209480c-9295-4906-8221-ed6e549aaade.png)
 
 ## 此程式未來展望
